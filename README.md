@@ -9,6 +9,12 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
+**▶ Live demo: <https://youtube-summariser-three.vercel.app>**
+
+> The hosted demo showcases the UI. It runs without API keys, so generating a
+> summary requires running locally with your own keys (see
+> [Quick start](#quick-start)) or deploying your own instance.
+
 ![YouTube AI Summarizer screenshot](docs/screenshot.png)
 
 ## Why this exists
