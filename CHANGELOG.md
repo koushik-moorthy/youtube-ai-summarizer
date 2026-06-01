@@ -23,6 +23,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Hardened Gemini JSON parsing to normalize summary fields, coercing stray
   string values into arrays so malformed model output no longer breaks the UI.
 
+### Fixed
+
+- The client now parses the `/api/summarize` response defensively. A non-JSON
+  response (e.g. a timeout, infrastructure 500, or dev-server recompile window)
+  previously surfaced as a cryptic `Unexpected token 'I'... is not valid JSON`
+  error; it now shows a readable message including the HTTP status.
+
 ## [0.1.0] - 2026-06-01
 
 ### Added
@@ -33,5 +40,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `gemini-2.5-pro`.
 - `POST /api/summarize` endpoint.
 
-[Unreleased]: https://github.com/koushik/youtube-ai-summarizer/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/koushik/youtube-ai-summarizer/releases/tag/v0.1.0
+[Unreleased]: https://github.com/koushik-moorthy/youtube-ai-summarizer/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/koushik-moorthy/youtube-ai-summarizer/releases/tag/v0.1.0

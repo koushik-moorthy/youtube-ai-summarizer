@@ -2,7 +2,7 @@
 
 > Turn any YouTube video into a concise, bilingual (English + Tamil) summary — with bullet-point takeaways, action items, key points, and clickable timestamps.
 
-[![CI](https://github.com/koushik/youtube-ai-summarizer/actions/workflows/ci.yml/badge.svg)](https://github.com/koushik/youtube-ai-summarizer/actions/workflows/ci.yml)
+[![CI](https://github.com/koushik-moorthy/youtube-ai-summarizer/actions/workflows/ci.yml/badge.svg)](https://github.com/koushik-moorthy/youtube-ai-summarizer/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -73,7 +73,7 @@ The pipeline is captions-first and only pays for transcription when it has to:
 **Prerequisites:** Node.js `>= 18.18` and npm.
 
 ```bash
-git clone https://github.com/koushik/youtube-ai-summarizer.git
+git clone https://github.com/koushik-moorthy/youtube-ai-summarizer.git
 cd youtube-ai-summarizer
 npm install
 cp .env.example .env.local   # then add your keys (see below)

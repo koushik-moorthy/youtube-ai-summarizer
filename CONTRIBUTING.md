@@ -6,7 +6,7 @@ to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Ways to contribute
 
-- 🐛 Report bugs via [issues](https://github.com/koushik/youtube-ai-summarizer/issues)
+- 🐛 Report bugs via [issues](https://github.com/koushik-moorthy/youtube-ai-summarizer/issues)
 - 💡 Suggest features or improvements
 - 📖 Improve documentation
 - 🔧 Submit bug fixes and features via pull requests

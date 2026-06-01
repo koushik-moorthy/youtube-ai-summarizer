@@ -14,7 +14,7 @@ latest `main` branch.
 **Please do not report security vulnerabilities through public GitHub issues.**
 
 Instead, report them privately using
-[GitHub's private vulnerability reporting](https://github.com/koushik/youtube-ai-summarizer/security/advisories/new),
+[GitHub's private vulnerability reporting](https://github.com/koushik-moorthy/youtube-ai-summarizer/security/advisories/new),
 or email **koushikdugk007@gmail.com** with the details.
 
 Please include:

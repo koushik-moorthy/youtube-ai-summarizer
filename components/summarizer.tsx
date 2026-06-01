@@ -39,10 +39,29 @@ export function Summarizer() {
         body: JSON.stringify({ youtubeUrl }),
       });
 
-      const payload = (await response.json()) as SummarizeResponse & ApiError;
+      // The server normally returns JSON, but a timeout or infrastructure-level
+      // failure can return a plain-text body (e.g. "Internal Server Error").
+      // Read as text first and parse defensively so those surface as a readable
+      // message instead of a JSON.parse error.
+      const raw = await response.text();
+      let payload: (SummarizeResponse & ApiError) | null = null;
+      try {
+        payload = raw ? (JSON.parse(raw) as SummarizeResponse & ApiError) : null;
+      } catch {
+        payload = null;
+      }
 
       if (!response.ok) {
-        throw new Error(payload.error?.message ?? "Could not summarize this video.");
+        const message =
+          payload?.error?.message ??
+          (response.status === 504
+            ? "The video took too long to process. Try a shorter one."
+            : `Could not summarize this video (HTTP ${response.status}).`);
+        throw new Error(message);
+      }
+
+      if (!payload) {
+        throw new Error("The server returned an unexpected response. Please try again.");
       }
 
       setResult(payload);

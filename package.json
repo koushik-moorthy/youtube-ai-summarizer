@@ -5,13 +5,13 @@
   "description": "Summarize YouTube videos into English and Tamil with key points, action items, and timestamps. Captions-first with audio-transcription fallback, powered by Gemini and OpenAI.",
   "license": "MIT",
   "author": "Koushik <koushikdugk007@gmail.com>",
-  "homepage": "https://github.com/koushik/youtube-ai-summarizer#readme",
+  "homepage": "https://github.com/koushik-moorthy/youtube-ai-summarizer#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/koushik/youtube-ai-summarizer.git"
+    "url": "https://github.com/koushik-moorthy/youtube-ai-summarizer.git"
   },
   "bugs": {
-    "url": "https://github.com/koushik/youtube-ai-summarizer/issues"
+    "url": "https://github.com/koushik-moorthy/youtube-ai-summarizer/issues"
   },
   "keywords": [
     "youtube",
